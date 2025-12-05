@@ -5,7 +5,8 @@ inputs:
     description: "User to greet"
     default: "Martin"
     required: true
-run:
+    default: 'world'
+runs:
   using: "composite"
   steps:
     - run: echo "👋 ${{ inputs.who-to-greet }}"
