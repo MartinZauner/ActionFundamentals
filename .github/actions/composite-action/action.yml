@@ -1,0 +1,12 @@
+name: "Composite Action Demo"
+description: "This is a simple composite action demo"
+inputs:
+  who-to-greet:
+    description: "User to greet"
+    default: "octocat"
+    required: true
+run:
+  using: "composite"
+  steps:
+    - run: echo "👋 ${{ inputs.who-to-greet }}"
+      shell: bash
