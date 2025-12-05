@@ -1,4 +1,4 @@
-name: Reusable Workflow
+name: Reusable workflow
 
 on:
   workflow_call:
@@ -15,7 +15,7 @@ on:
 
 jobs:
   reusable-job:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     outputs:
       current-time: ${{ steps.time.outputs.time }}
     steps:
