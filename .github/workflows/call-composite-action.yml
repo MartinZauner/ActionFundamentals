@@ -1,0 +1,12 @@
+name: "Call Composite Action"
+
+on: [workflow_dispatch]
+
+jobs:
+  call-action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/composite-action
+        with: 
+          who-to-greet: "MartinZauner"
